@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.poo.viewController.ViewClienteController">
+
+    <!-- Campos de entrada -->
+    <TextField fx:id="nombreField" promptText="Nombre" layoutX="20" layoutY="20" prefWidth="150"/>
+    <TextField fx:id="telefonoField" promptText="Teléfono" layoutX="180" layoutY="20" prefWidth="150"/>
+    <TextField fx:id="direccionField" promptText="Dirección" layoutX="340" layoutY="20" prefWidth="150"/>
+
+    <!-- Botones de acción -->
+    <Button fx:id="agregarCliente" text="Agregar" layoutX="500" layoutY="20" onAction="#agregarCliente"/>
+    <Button fx:id="actualizarCliente" text="Actualizar" layoutX="580" layoutY="20" onAction="#actualizarCliente"/>
+    <Button fx:id="eliminarCliente" text="Eliminar" layoutX="680" layoutY="20" onAction="#eliminarCliente"/>
+
+    <!-- Tabla para mostrar la lista de clientes -->
+    <TableView fx:id="clientesTable" layoutX="20" layoutY="60" prefHeight="300" prefWidth="740">
+        <columns>
+            <TableColumn fx:id="columnaNombre" text="Nombre" prefWidth="200"/>
+            <TableColumn fx:id="columnaTelefono" text="Teléfono" prefWidth="200"/>
+            <TableColumn fx:id="columnaDireccion" text="Dirección" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>

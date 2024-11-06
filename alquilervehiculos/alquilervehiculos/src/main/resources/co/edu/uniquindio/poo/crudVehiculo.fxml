@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="627.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.ViewVehiculoController">
+   <children>
+   
+       <!-- Título -->
+       <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Gestión de Vehículos" />
+   
+       <!-- Campos de entrada para Vehículo -->
+       <TextField fx:id="matriculaField" layoutX="20" layoutY="60" prefWidth="150" promptText="Matrícula" />
+       <TextField fx:id="marcaField" layoutX="180" layoutY="60" prefWidth="150" promptText="Marca" />
+       <TextField fx:id="modeloField" layoutX="340" layoutY="60" prefWidth="150" promptText="Modelo" />
+       <TextField fx:id="añoFabricacionField" layoutX="500" layoutY="60" prefWidth="150" promptText="Año de Fabricación" />
+   
+       <!-- Botones de acción -->
+       <Button fx:id="agregarVehiculo" layoutX="20" layoutY="100" onAction="#agregarVehiculo" prefWidth="100" text="Agregar" />
+       <Button fx:id="actualizarVehiculo" layoutX="140" layoutY="100" onAction="#actualizarVehiculo" prefWidth="100" text="Actualizar" />
+       <Button fx:id="eliminarVehiculo" layoutX="260" layoutY="100" onAction="#eliminarVehiculo" prefWidth="100" text="Eliminar" />
+   
+       <!-- Tabla para mostrar la lista de vehículos -->
+       <TableView fx:id="vehiculosTable" layoutX="20.0" layoutY="140" prefHeight="473.0" prefWidth="905.0">
+           <columns>
+               <TableColumn fx:id="columnaMatricula" prefWidth="150" text="Matrícula" />
+               <TableColumn fx:id="columnaMarca" prefWidth="150" text="Marca" />
+               <TableColumn fx:id="columnaModelo" prefWidth="150" text="Modelo" />
+               <TableColumn fx:id="columnaAñoFabricacion" prefWidth="150" text="Año de Fabricación" />
+           </columns>
+       </TableView>
+      <Button layoutX="383.0" layoutY="100.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" text="Reserva" />
+   </children>
+
+</AnchorPane>

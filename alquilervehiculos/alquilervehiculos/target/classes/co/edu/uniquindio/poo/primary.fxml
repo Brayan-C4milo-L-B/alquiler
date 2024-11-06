@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="287.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.controller.PrimaryController">
+   <children>
+   
+      <!-- Título de la aplicación -->
+      <Text fill="#120cd0" layoutX="117.0" layoutY="33.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Gestión de Alquiler de Vehículos" />
+   
+      <!-- Botón para abrir el CRUD de clientes -->
+      <Button layoutX="20" layoutY="80" onAction="#abrirCrudCliente" prefWidth="150" text="Gestionar Clientes" />
+   
+      <!-- Botón para abrir el CRUD de vehículos (opcional) -->
+      <Button layoutX="20" layoutY="130" onAction="#abrirCrudVehiculo" prefWidth="150" text="Gestionar Vehículos" />
+   
+      <!-- Botón para salir de la aplicación -->
+      <Button layoutX="20" layoutY="180" onAction="#salirAplicacion" prefWidth="150" text="Salir" />
+      <ImageView blendMode="MULTIPLY" depthTest="ENABLE" fitHeight="143.0" fitWidth="274.0" layoutX="206.0" layoutY="80.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/fheru/OneDrive/Imágenes/lovepik-a-car-png-image_401434180_wh1200.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+   </children>
+
+</AnchorPane>
